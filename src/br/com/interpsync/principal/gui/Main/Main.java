@@ -24,7 +24,6 @@ public class Main {
            {
             Integracao integra = new Integracao();
             integra.executar();
-            
            }
         }, tempo, periodo);
 
