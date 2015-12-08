@@ -24,7 +24,7 @@ public class Main {
            {
             Integracao integra = new Integracao();
             integra.executar();
-               System.out.println("Teste");
+            
            }
         }, tempo, periodo);
 
