@@ -58,11 +58,16 @@
 /* 58:59 */     stmt.setInt(9, movimento.getBits().intValue());
 /* 59:60 */     stmt.executeUpdate();
 /* 60:61 */     stmt.close();
+                conexao.close();
 /* 61:   */   }
 /* 62:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.saci.dao.Stkmov_SACIDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.saci.dao.Stkmov_SACIDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

@@ -62,6 +62,7 @@
 /* 62:62 */       laudos.add(laudo);
 /* 63:   */     }
 /* 64:64 */     stmt.close();
+                connection.close();
 /* 65:65 */     return laudos;
 /* 66:   */   }
 /* 67:   */   
@@ -99,8 +100,12 @@
 /* 99:   */   }
 /* :0:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.retreadsystem.dao.Laudosrec_ERPDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.retreadsystem.dao.Laudosrec_ERPDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

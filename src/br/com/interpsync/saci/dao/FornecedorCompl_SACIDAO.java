@@ -51,11 +51,16 @@
 /* 51:51 */     stmt.setInt(3, compl.getAuxLong1().intValue());
 /* 52:52 */     stmt.executeUpdate();
 /* 53:53 */     stmt.close();
+                conexao.close();
 /* 54:   */   }
 /* 55:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.saci.dao.FornecedorCompl_SACIDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.saci.dao.FornecedorCompl_SACIDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

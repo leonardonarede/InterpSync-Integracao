@@ -62,6 +62,7 @@
 /* 62:61 */       vendedores.add(vendedor);
 /* 63:   */     }
 /* 64:63 */     stmt.close();
+                conexao.close();
 /* 65:64 */     return vendedores;
 /* 66:   */   }
 /* 67:   */   
@@ -85,15 +86,21 @@
 /* 85:83 */       vendedor.setNome(rs.getString("name"));
 /* 86:84 */       vendedor.setStoreno(rs.getInt("storeno"));
 /* 87:85 */       stmt.close();
+                  conexao.close();
 /* 88:86 */       return vendedor;
 /* 89:   */     }
 /* 90:88 */     stmt.close();
+                conexao.close();
 /* 91:89 */     return null;
 /* 92:   */   }
 /* 93:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.saci.dao.Vendedor_SACIDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.saci.dao.Vendedor_SACIDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

@@ -58,9 +58,11 @@
 /* 58:   */       catch (Exception e) {}
 /* 59:58 */       String saida = rs.getString("Produto");
 /* 60:59 */       stmt.close();
+                  conexao.close();
 /* 61:60 */       return saida;
 /* 62:   */     }
 /* 63:62 */     stmt.close();
+                conexao.close();
 /* 64:63 */     return null;
 /* 65:   */   }
 /* 66:   */   
@@ -82,9 +84,11 @@
 /* 82:   */       catch (Exception e) {}
 /* 83:81 */       String saida = rs.getString("Produto");
 /* 84:82 */       stmt.close();
+                  conexao.close();
 /* 85:83 */       return saida;
 /* 86:   */     }
 /* 87:85 */     stmt.close();
+                conexao.close();
 /* 88:86 */     return null;
 /* 89:   */   }
 /* 90:   */ }

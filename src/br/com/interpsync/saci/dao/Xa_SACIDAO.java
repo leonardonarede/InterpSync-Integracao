@@ -61,14 +61,19 @@
 /* 61:60 */       Long saida = Long.valueOf(rs.getLong("xano"));
 /* 62:61 */       stmt2.close();
 /* 63:62 */       stmt.close();
+                  conexao.close();
 /* 64:63 */       return saida;
 /* 65:   */     }
 /* 66:65 */     return null;
 /* 67:   */   }
 /* 68:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.saci.dao.Xa_SACIDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.saci.dao.Xa_SACIDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

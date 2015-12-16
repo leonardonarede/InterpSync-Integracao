@@ -64,6 +64,7 @@
 /* 64:63 */       estoque.setQtty_varejo(Long.valueOf(rs.getLong("qtty_varejo")));
 /* 65:64 */       estoque.setLastchangedt(Long.valueOf(rs.getLong("lastchangedt")));
 /* 66:65 */       stmt.close();
+                  conexao.close();
 /* 67:66 */       return estoque;
 /* 68:   */     }
 /* 69:68 */     stmt.close();
@@ -82,11 +83,16 @@
 /* 82:81 */     stmt.setString(4, estoque.getPrdno());
 /* 83:82 */     stmt.executeUpdate();
 /* 84:83 */     stmt.close();
+                conexao.close();
 /* 85:   */   }
 /* 86:   */ }
 
-
-/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
- * Qualified Name:     br.com.interpsync.saci.dao.Stk_SACIDAO
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\Leonardo\Desktop\INT\InterpSync.jar
+
+ * Qualified Name:     br.com.interpsync.saci.dao.Stk_SACIDAO
+
+ * JD-Core Version:    0.7.0.1
+
  */

@@ -60,6 +60,7 @@
                   stmt.setInt(8, osvr.getOSVRID());
 /*  60: 61 */     stmt.executeUpdate();
 /*  61: 62 */     stmt.close();
+                  connection.close();
 /*  62:    */   }
 /*  63:    */   
 /*  64:    */   public void atualizar(Osvr_ERP osvr)
@@ -80,6 +81,7 @@
 /*  79: 81 */     stmt.setString(8, osvr.getCodigoReg());
 /*  80: 82 */     stmt.executeUpdate();
 /*  81: 83 */     stmt.close();
+                  connection.close();
 /*  82:    */   }
 /*  83:    */   
 /*  84:    */   public Osvr_ERP localizarPorID(Integer nos, String tiporeg, String codreg, Integer osvrid)
@@ -108,6 +110,7 @@
                     osvr.setOSVRID(rs.getInt("OSVRID"));
 /* 106:    */     }
 /* 107:109 */     stmt.close();
+                  connection.close();
 /* 108:110 */     return osvr;
 /* 109:    */   }
 /* 110:    */   
@@ -133,6 +136,7 @@
 /* 129:131 */       lista.add(osvr);
 /* 130:    */     }
 /* 131:133 */     stmt.close();
+                  connection.close();
 /* 132:134 */     return lista;
 /* 133:    */   }
 /* 134:    */ }
