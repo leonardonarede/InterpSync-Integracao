@@ -61,8 +61,8 @@
 /*  61: 61 */       coxin.setStei(rs.getInt("Stei"));
 /*  62: 62 */       coxins.add(coxin);
 /*  63:    */     }
-/*  64: 64 */     stmt.close();
-                  connection.close();
+/*  64: 64 */     //stmt.close();
+                  //connection.close();
 /*  65: 65 */     return coxins;
 /*  66:    */   }
 /*  67:    */   
@@ -83,8 +83,8 @@
 /*  82: 82 */       coxin.setStei(rs.getInt("Stei"));
 /*  83: 83 */       coxins.add(coxin);
 /*  84:    */     }
-/*  85: 85 */     stmt.close();
-                  connection.close();
+/*  85: 85 */     //stmt.close();
+                  //connection.close();
 /*  86: 86 */     return coxins;
 /*  87:    */   }
 /*  88:    */   
@@ -99,8 +99,8 @@
 /*  97: 98 */     stmt.setInt(3, coxin.getStei());
 /*  98: 99 */     stmt.setString(4, coxin.getCodCX());
 /*  99:100 */     stmt.executeUpdate();
-/* 100:101 */     stmt.close();
-                  connection.close();
+/* 100:101 */     //stmt.close();
+                  //connection.close();
 /* 101:    */   }
 /* 102:    */ }
 

@@ -66,8 +66,8 @@
                     osvr.setOSVRID(rs.getInt("OSVRID"));
 /*  66: 64 */       lista.add(osvr);
 /*  67:    */     }
-/*  68: 66 */     stmt.close();
-                  connection.close();
+/*  68: 66 */     //stmt.close();
+                  //connection.close();
 /*  69: 67 */     return lista;
 /*  70:    */   }
 /*  71:    */   
@@ -99,8 +99,8 @@
 /*  96: 92 */         lista.add(osvr);
 /*  97:    */       }
 /*  98:    */     }
-/*  99: 95 */     stmt.close();
-                  connection.close();
+/*  99: 95 */     //stmt.close();
+                  //connection.close();
 /* 100: 96 */     return lista;
 /* 101:    */   }
 /* 102:    */   
@@ -114,8 +114,8 @@
 /* 110:107 */     stmt.setString(3, osvr.getTipoReg());
 /* 111:108 */     stmt.setString(4, osvr.getCodigoReg());
 /* 112:109 */     stmt.executeUpdate();
-/* 113:110 */     stmt.close();
-                  connection.close();
+/* 113:110 */     //stmt.close();
+                  //connection.close();
 /* 114:    */   }
 /* 115:    */ }
 

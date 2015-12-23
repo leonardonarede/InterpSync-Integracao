@@ -61,8 +61,8 @@
 /*  61: 61 */       medida.setStEI(rs.getInt("StEI"));
 /*  62: 62 */       medidas.add(medida);
 /*  63:    */     }
-/*  64: 64 */     stmt.close();
-                  connection.close();
+/*  64: 64 */     //stmt.close();
+                  //connection.close();
 /*  65: 65 */     return medidas;
 /*  66:    */   }
 /*  67:    */   
@@ -83,8 +83,8 @@
 /*  82: 82 */       medida.setStEI(rs.getInt("StEI"));
 /*  83: 83 */       medidas.add(medida);
 /*  84:    */     }
-/*  85: 85 */     stmt.close();
-                  connection.close();
+/*  85: 85 */     //stmt.close();
+                  //connection.close();
 /*  86: 86 */     return medidas;
 /*  87:    */   }
 /*  88:    */   
@@ -98,8 +98,8 @@
 /*  96: 97 */     stmt.setInt(3, medida.getStEI());
 /*  97: 98 */     stmt.setString(4, medida.getCodME());
 /*  98: 99 */     stmt.executeUpdate();
-/*  99:100 */     stmt.close();
-                  connection.close();
+/*  99:100 */     //stmt.close();
+                  //connection.close();
 /* 100:    */   }
 /* 101:    */ }
 

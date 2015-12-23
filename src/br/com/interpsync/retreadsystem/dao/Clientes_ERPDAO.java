@@ -82,8 +82,8 @@
 /*  82: 84 */       cliente.setStEI(rs.getInt("StEI"));
 /*  83: 85 */       clientes.add(cliente);
 /*  84:    */     }
-/*  85: 87 */     stmt.close();
-                  connection.close();
+/*  85: 87 */     //stmt.close();
+                  //connection.close();
 /*  86: 88 */     return clientes;
 /*  87:    */   }
 /*  88:    */   
@@ -121,8 +121,8 @@
 /* 120:123 */     stmt.setString(24, cliente.getTContato());
 /* 121:124 */     stmt.setInt(25, cliente.getStEI());
 /* 122:125 */     stmt.executeUpdate();
-/* 123:126 */     stmt.close();
-                  connection.close();
+/* 123:126 */     //stmt.close();
+                  //connection.close();
 /* 124:    */   }
 /* 125:    */   
 /* 126:    */   public Clientes_ERP findbyid(String id)
@@ -162,8 +162,8 @@
 /* 160:163 */       cliente.setTContato(rs.getString("TContato"));
 /* 161:164 */       cliente.setStEI(rs.getInt("StEI"));
 /* 162:    */     }
-/* 163:166 */     stmt.close();
-                  connection.close();
+/* 163:166 */     //stmt.close();
+                  //connection.close();
 /* 164:167 */     return cliente;
 /* 165:    */   }
 /* 166:    */   
@@ -201,8 +201,8 @@
 /* 198:203 */     stmt.setInt(24, cliente.getStEI());
 /* 199:204 */     stmt.setString(25, cliente.getCNPJCPF());
 /* 200:205 */     stmt.executeUpdate();
-/* 201:206 */     stmt.close();
-                  connection.close();
+/* 201:206 */     //stmt.close();
+                  //connection.close();
 /* 202:    */   }
 /* 203:    */ }
 

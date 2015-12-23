@@ -61,8 +61,8 @@
 /*  61: 62 */       servico.setStei(rs.getInt("Stei"));
 /*  62: 63 */       servicos.add(servico);
 /*  63:    */     }
-/*  64: 65 */     stmt.close();
-                  connection.close();
+/*  64: 65 */     //stmt.close();
+                  //connection.close();
 /*  65: 66 */     return servicos;
 /*  66:    */   }
 /*  67:    */   
@@ -83,8 +83,8 @@
 /*  82: 83 */       servico.setStei(rs.getInt("Stei"));
 /*  83: 84 */       servicos.add(servico);
 /*  84:    */     }
-/*  85: 86 */     stmt.close();
-                  connection.close();
+/*  85: 86 */     //stmt.close();
+                  //connection.close();
 /*  86: 87 */     return servicos;
 /*  87:    */   }
 /*  88:    */   
@@ -98,8 +98,8 @@
 /*  96: 98 */     stmt.setInt(3, servico.getStei());
 /*  97: 99 */     stmt.setString(4, servico.getCodSE());
 /*  98:100 */     stmt.executeUpdate();
-/*  99:101 */     stmt.close();
-                  connection.close();
+/*  99:101 */     //stmt.close();
+                  //connection.close();
 /* 100:    */   }
 /* 101:    */ }
 

@@ -61,8 +61,8 @@
 /*  61: 62 */       resp.setStEI(rs.getInt("StEI"));
 /*  62: 63 */       lista.add(resp);
 /*  63:    */     }
-/*  64: 65 */     stmt.close();
-                  connection.close();
+/*  64: 65 */     //stmt.close();
+                  //connection.close();
 /*  65: 66 */     return lista;
 /*  66:    */   }
 /*  67:    */   
@@ -83,8 +83,8 @@
 /*  82: 83 */       resp.setStEI(rs.getInt("StEI"));
 /*  83: 84 */       lista.add(resp);
 /*  84:    */     }
-/*  85: 86 */     stmt.close();
-                  connection.close();
+/*  85: 86 */     //stmt.close();
+                  //connection.close();
 /*  86: 87 */     return lista;
 /*  87:    */   }
 /*  88:    */   
@@ -98,8 +98,8 @@
 /*  96: 98 */     stmt.setInt(3, resp.getStEI());
 /*  97: 99 */     stmt.setString(4, resp.getCNPJCPF());
 /*  98:100 */     stmt.executeQuery();
-/*  99:101 */     stmt.close();
-                  connection.close();
+/*  99:101 */     //stmt.close();
+                  //connection.close();
 /* 100:    */   }
 /* 101:    */ }
 

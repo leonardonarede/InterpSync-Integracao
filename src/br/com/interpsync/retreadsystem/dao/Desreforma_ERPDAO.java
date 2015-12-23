@@ -67,8 +67,8 @@
 /*  67: 67 */       desenho.setStEI(rs.getInt("StEI"));
 /*  68: 68 */       desenhos.add(desenho);
 /*  69:    */     }
-/*  70: 70 */     stmt.close();
-                  connection.close();
+/*  70: 70 */     //stmt.close();
+                  //connection.close();
 /*  71: 71 */     return desenhos;
 /*  72:    */   }
 /*  73:    */   
@@ -95,8 +95,8 @@
 /*  94: 94 */       desenho.setStEI(rs.getInt("StEI"));
 /*  95: 95 */       desenhos.add(desenho);
 /*  96:    */     }
-/*  97: 97 */     stmt.close();
-                  connection.close();
+/*  97: 97 */     //stmt.close();
+                  //connection.close();
 /*  98: 98 */     return desenhos;
 /*  99:    */   }
 /* 100:    */   
@@ -118,8 +118,8 @@
 /* 116:117 */     stmt.setInt(9, desenho.getStEI());
 /* 117:118 */     stmt.setString(10, desenho.getCodDE());
 /* 118:119 */     stmt.executeUpdate();
-/* 119:120 */     stmt.close();
-                  connection.close();
+/* 119:120 */     //stmt.close();
+                  //connection.close();
 /* 120:    */   }
 /* 121:    */ }
 

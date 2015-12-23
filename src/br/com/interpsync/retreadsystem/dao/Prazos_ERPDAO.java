@@ -63,8 +63,8 @@
 /*  63: 63 */       prazo.setStEI(rs.getInt("StEI"));
 /*  64: 64 */       lista.add(prazo);
 /*  65:    */     }
-/*  66: 66 */     stmt.close();
-                  connection.close();
+/*  66: 66 */     //stmt.close();
+                  //connection.close();
 /*  67: 67 */     return lista;
 /*  68:    */   }
 /*  69:    */   
@@ -87,8 +87,8 @@
 /*  86: 86 */       prazo.setStEI(rs.getInt("StEI"));
 /*  87: 87 */       lista.add(prazo);
 /*  88:    */     }
-/*  89: 89 */     stmt.close();
-                  connection.close();
+/*  89: 89 */     //stmt.close();
+                  //connection.close();
 /*  90: 90 */     return lista;
 /*  91:    */   }
 /*  92:    */   
@@ -104,8 +104,8 @@
 /* 102:103 */     stmt.setInt(5, prazo.getStEI());
 /* 103:104 */     stmt.setString(6, prazo.getCodPR());
 /* 104:105 */     stmt.executeUpdate();
-/* 105:106 */     stmt.close();
-                  connection.close();
+/* 105:106 */     //stmt.close();
+                  //connection.close();
 /* 106:    */   }
 /* 107:    */ }
 

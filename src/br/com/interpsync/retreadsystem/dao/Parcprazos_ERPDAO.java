@@ -61,8 +61,8 @@
 /* 61:60 */       prazo.setStEI(rs.getInt("StEI"));
 /* 62:61 */       prazos.add(prazo);
 /* 63:   */     }
-/* 64:63 */     stmt.close();
-                connection.close();
+/* 64:63 */     //stmt.close();
+                //connection.close();
 /* 65:64 */     return prazos;
 /* 66:   */   }
 /* 67:   */   
@@ -83,8 +83,8 @@
 /* 82:81 */       prazo.setStEI(rs.getInt("StEI"));
 /* 83:82 */       prazos.add(prazo);
 /* 84:   */     }
-/* 85:84 */     stmt.close();
-                connection.close();
+/* 85:84 */     //stmt.close();
+                //connection.close();
 /* 86:85 */     return prazos;
 /* 87:   */   }
 /* 88:   */   
@@ -98,8 +98,8 @@
 /* 96:96 */     stmt.setInt(3, parc.getStEI());
 /* 97:97 */     stmt.setString(4, parc.getCodPR());
 /* 98:98 */     stmt.executeUpdate();
-/* 99:99 */     stmt.close();
-                connection.close();
+/* 99:99 */     //stmt.close();
+                //connection.close();
 /* :0:   */   }
 /* :1:   */ }
 

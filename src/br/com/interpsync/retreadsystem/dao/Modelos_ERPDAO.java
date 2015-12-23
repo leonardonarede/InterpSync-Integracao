@@ -62,8 +62,8 @@
 /*  62: 62 */       modelo.setStEI(rs.getInt("StEI"));
 /*  63: 63 */       modelos.add(modelo);
 /*  64:    */     }
-/*  65: 65 */     stmt.close();
-                  connection.close();
+/*  65: 65 */     //stmt.close();
+                  //connection.close();
 /*  66: 66 */     return modelos;
 /*  67:    */   }
 /*  68:    */   
@@ -85,8 +85,8 @@
 /*  84: 84 */       modelo.setStEI(rs.getInt("StEI"));
 /*  85: 85 */       modelos.add(modelo);
 /*  86:    */     }
-/*  87: 87 */     stmt.close();
-                  connection.close();
+/*  87: 87 */     //stmt.close();
+                  //connection.close();
 /*  88: 88 */     return modelos;
 /*  89:    */   }
 /*  90:    */   
@@ -101,8 +101,8 @@
 /*  99:100 */     stmt.setInt(4, modelos.getStEI());
 /* 100:101 */     stmt.setString(5, modelos.getCodMO());
 /* 101:102 */     stmt.executeUpdate();
-/* 102:103 */     stmt.close();
-                  connection.close();
+/* 102:103 */     //stmt.close();
+                  //connection.close();
 /* 103:    */   }
 /* 104:    */ }
 

@@ -99,8 +99,8 @@
 /*  99:    */       
 /* 100:102 */       lista.add(os);
 /* 101:    */     }
-/* 102:104 */     stmt.close();
-                  connection.close();
+/* 102:104 */     //stmt.close();
+                  //connection.close();
 /* 103:105 */     return lista;
 /* 104:    */   }
 /* 105:    */   
@@ -156,8 +156,8 @@
 /* 155:    */       
 /* 156:159 */       lista.add(os);
 /* 157:    */     }
-/* 158:161 */     stmt.close();
-                  connection.close();
+/* 158:161 */     //stmt.close();
+                  //connection.close();
 /* 159:162 */     return lista;
 /* 160:    */   }
 /* 161:    */   
@@ -209,8 +209,8 @@
 /* 207:213 */     stmt.setString(25, os.getLauFFC());
 /* 208:214 */     stmt.setInt(26, os.getNrOS().intValue());
 /* 209:215 */     stmt.executeUpdate();
-/* 210:216 */     stmt.close();
-                  connection.close();
+/* 210:216 */     //stmt.close();
+                  //connection.close();
 /* 211:    */   }
 /* 212:    */ }
 

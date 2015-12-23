@@ -60,8 +60,8 @@
 /* 60:60 */       reparo.setStei(rs.getInt("Stei"));
 /* 61:61 */       reparos.add(reparo);
 /* 62:   */     }
-/* 63:63 */     stmt.close();
-                connection.close();
+/* 63:63 */     //stmt.close();
+                //connection.close();
 /* 64:64 */     return reparos;
 /* 65:   */   }
 /* 66:   */   
@@ -81,8 +81,8 @@
 /* 80:80 */       reparo.setStei(rs.getInt("Stei"));
 /* 81:81 */       reparos.add(reparo);
 /* 82:   */     }
-/* 83:83 */     stmt.close();
-                connection.close();
+/* 83:83 */     //stmt.close();
+                //connection.close();
 /* 84:84 */     return reparos;
 /* 85:   */   }
 /* 86:   */   
@@ -95,8 +95,8 @@
 /* 93:94 */     stmt.setInt(2, reparo.getStei());
 /* 94:95 */     stmt.setString(3, reparo.getCodRP());
 /* 95:96 */     stmt.executeUpdate();
-/* 96:97 */     stmt.close();
-                connection.close();
+/* 96:97 */     //stmt.close();
+                //connection.close();
 /* 97:   */   }
 /* 98:   */ }
 

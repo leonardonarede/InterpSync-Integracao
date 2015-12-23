@@ -61,8 +61,8 @@
 /*  61: 61 */       vendedor.setStEI(rs.getInt("StEI"));
 /*  62: 62 */       vendedores.add(vendedor);
 /*  63:    */     }
-/*  64: 64 */     stmt.close();
-                  connection.close();
+/*  64: 64 */     //stmt.close();
+                  //connection.close();
 /*  65: 65 */     return vendedores;
 /*  66:    */   }
 /*  67:    */   
@@ -83,8 +83,8 @@
 /*  82: 82 */       vendedor.setStEI(rs.getInt("StEI"));
 /*  83: 83 */       vendedores.add(vendedor);
 /*  84:    */     }
-/*  85: 85 */     stmt.close();
-                  connection.close();
+/*  85: 85 */     //stmt.close();
+                  //connection.close();
 /*  86: 86 */     return vendedores;
 /*  87:    */   }
 /*  88:    */   
@@ -99,8 +99,8 @@
 /*  97: 98 */     stmt.setString(3, vendedor.getRegiaoVE());
 /*  98: 99 */     stmt.setInt(4, vendedor.getStEI());
 /*  99:100 */     stmt.executeUpdate();
-/* 100:101 */     stmt.close();
-                  connection.close();
+/* 100:101 */     //stmt.close();
+                  //connection.close();
 /* 101:    */   }
 /* 102:    */   
 /* 103:    */   public Vendedores_ERP findById(String id)
@@ -110,8 +110,8 @@
 /* 107:109 */     PreparedStatement stmt = getConnection().prepareStatement(sql);
 /* 108:110 */     stmt.setString(1, id);
 /* 109:111 */     ResultSet rs = stmt.executeQuery();
-/* 110:112 */     stmt.close();
-                  connection.close();
+/* 110:112 */     //stmt.close();
+                  //connection.close();
 /* 111:113 */     return null;
 /* 112:    */   }
 /* 113:    */ }

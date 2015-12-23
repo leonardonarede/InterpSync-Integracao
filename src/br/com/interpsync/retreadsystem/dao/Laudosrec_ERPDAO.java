@@ -61,8 +61,8 @@
 /* 61:61 */       laudo.setStEI(rs.getInt("StEI"));
 /* 62:62 */       laudos.add(laudo);
 /* 63:   */     }
-/* 64:64 */     stmt.close();
-                connection.close();
+/* 64:64 */     //stmt.close();
+                //connection.close();
 /* 65:65 */     return laudos;
 /* 66:   */   }
 /* 67:   */   
@@ -83,7 +83,7 @@
 /* 82:81 */       laudo.setStEI(rs.getInt("StEI"));
 /* 83:82 */       laudos.add(laudo);
 /* 84:   */     }
-/* 85:84 */     stmt.close();
+/* 85:84 */     //stmt.close();
 /* 86:85 */     return laudos;
 /* 87:   */   }
 /* 88:   */   
@@ -96,7 +96,7 @@
 /* 95:95 */     stmt.setInt(1, laudo.getStEI());
 /* 96:96 */     stmt.setString(2, laudo.getCodLA());
 /* 97:97 */     stmt.executeUpdate();
-/* 98:98 */     stmt.close();
+/* 98:98 */     //stmt.close();
 /* 99:   */   }
 /* :0:   */ }
 

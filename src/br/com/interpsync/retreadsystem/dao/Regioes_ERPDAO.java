@@ -60,8 +60,8 @@
 /* 60:60 */       regiao.setStEI(rs.getInt("StEI"));
 /* 61:61 */       lista.add(regiao);
 /* 62:   */     }
-/* 63:63 */     stmt.close();
-                connection.close();
+/* 63:63 */     //stmt.close();
+               //connection.close();
 /* 64:64 */     return lista;
 /* 65:   */   }
 /* 66:   */   
@@ -81,8 +81,8 @@
 /* 80:80 */       regiao.setStEI(rs.getInt("StEI"));
 /* 81:81 */       lista.add(regiao);
 /* 82:   */     }
-/* 83:83 */     stmt.close();
-                connection.close();
+/* 83:83 */     //stmt.close();
+                //connection.close();
 /* 84:84 */     return lista;
 /* 85:   */   }
 /* 86:   */   
@@ -95,8 +95,8 @@
 /* 93:94 */     stmt.setInt(2, regiao.getStEI());
 /* 94:95 */     stmt.setString(3, regiao.getCodRE());
 /* 95:96 */     stmt.executeUpdate();
-/* 96:97 */     stmt.close();
-                connection.close();
+/* 96:97 */     //stmt.close();
+                //connection.close();
 /* 97:   */   }
 /* 98:   */ }
 
